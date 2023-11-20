@@ -1,0 +1,24 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi ToDo list</title>
+  </head>
+  <body>
+    <!-- 1: los diferentes tipos de entradas se pueden ver en: https://www.w3schools.com/tags/att_input_type.asp -->
+    <input id="nuevaTarea" type="text" />
+    <!-- 2: acción de añadir a través de botonera-->
+    <button id="agregarTarea">Agregar</button>
+    <h3>Tareas:</h3>
+    <span id="cuenta-tareas">Total: </span><br />
+    <span id="tareas-validadas">Resueltas: </span><br />
+    <button onclick="verificarCheckboxesChequeados()">Verificar Tareas</button>
+    <!-- 3: generar lista en html-->
+    <ul id="tareas"></ul>
+
+    <script src="./assets/JS/script_todo_list.js"></script>
+  </body>
+</html>
